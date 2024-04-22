@@ -1,0 +1,61 @@
+/* Add transitions */
+.blog-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  transition: max-width 0.3s ease, margin 0.3s ease;
+}
+
+.blog-goBack {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #a9a9a9;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.blog-wrap header {
+  text-align: center;
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  color: #a9a9a9;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.blog-wrap img {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.blog-subCategory {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-subCategory > div {
+  margin: 1rem;
+}
+
+.blog-desc {
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blog-wrap {
+  animation: fadeIn 0.5s ease;
+  animation-fill-mode: forwards; /* Ensure the final state of the animation persists */
+}

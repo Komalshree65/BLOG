@@ -1,0 +1,81 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(241, 155, 234, 0.5),
+      rgba(181, 130, 174, 0.5)
+    );
+  background-size: cover;
+  transition: background 0.3s ease; /* Add transition for background */
+}
+
+.loginCard {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for transform and box-shadow */
+}
+
+.loginTitle {
+  font-size: 24px; /* Adjust font size */
+  margin-bottom: 20px; /* Add margin */
+  text-align: center; /* Center align */
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add transitions for background-color and border-color */
+}
+
+.loginInput:focus {
+  outline: none;
+  background-color: #fff; /* Change background color on focus */
+  border-color: #aaa; /* Change border color on focus */
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(115, 29, 99);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add transition for background-color */
+}
+
+.loginButton:hover {
+  background-color: rgb(135, 49, 119); /* Change background color on hover */
+}
+
+.loginRegisterButton {
+  margin-top: 10px;
+  background-color: rgb(90, 21, 96);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add transition for background-color */
+}
+
+.loginRegisterButton:hover {
+  background-color: rgb(110, 41, 116); /* Change background color on hover */
+}
